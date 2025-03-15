@@ -14,37 +14,45 @@ const Index = () => {
     <div className="min-h-screen flex flex-col h-full bg-black overflow-hidden">
       <BackgroundEffect />
       
-      <main className="relative z-10 px-4 md:px-8 lg:px-16 2xl:px-[116px] py-12 md:py-16 mx-auto w-full max-w-7xl">
-        <section className="w-full grid grid-cols-1 lg:grid-cols-12 gap-6 mx-auto">
-          {/* First row */}
-          <div className="lg:col-span-8 lg:row-span-1">
+      <main className="relative z-10 px-4 md:px-8 lg:px-16 py-8 md:py-12 mx-auto w-full max-w-6xl">
+        <section className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-5 mx-auto">
+          {/* Hero section - spans 2 columns on desktop */}
+          <div className="md:col-span-2 lg:col-span-2">
             <HeroCard />
           </div>
           
-          <div className="lg:col-span-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-6">
+          {/* Tracks - always single column */}
+          <div className="h-full">
             <TracksCard />
+          </div>
+          
+          {/* Prizes - single column */}
+          <div className="h-full">
             <PrizesCard />
           </div>
           
-          {/* Second row */}
-          <div className="lg:col-span-4 lg:row-span-1">
-            <SponsorsCard />
-          </div>
-          <div className="lg:col-span-4 lg:row-span-1">
+          {/* Timeline - single column */}
+          <div className="h-full">
             <TimelineCard />
           </div>
-          <div className="lg:col-span-4 lg:row-span-1">
+          
+          {/* Team Size - single column */}
+          <div className="h-full">
             <TeamSizeCard />
           </div>
           
-          {/* Third row */}
-          <div className="lg:col-span-12 lg:row-span-1">
+          {/* Sponsors section - spans 2 columns on medium, 1 on large */}
+          <div className="md:col-span-2 lg:col-span-1 h-full">
+            <SponsorsCard />
+          </div>
+          
+          {/* Ideas section - spans full width */}
+          <div className="md:col-span-2 lg:col-span-3">
             <IdeasCard />
           </div>
           
           {/* Powered by section */}
-          <div className="lg:col-span-12 mt-4 flex items-center text-sm text-gray-400 opacity-0 animate-fade-in justify-center"
-            style={{ animationDelay: "1000ms" }}>
+          <div className="md:col-span-2 lg:col-span-3 mt-4 flex items-center text-sm text-gray-400 justify-center">
             <span>Powered by</span>
             <span className="ml-2 font-medium text-white">UniDAO-NITK</span>
             <span className="mx-2">and</span>

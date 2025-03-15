@@ -1,7 +1,6 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
-import DecryptedText from './DecryptedText';
 import RegisterButton from './RegisterButton';
 
 const HeroCard: React.FC = () => {
@@ -9,70 +8,31 @@ const HeroCard: React.FC = () => {
   
   return (
     <motion.div 
-      className="rounded-3xl transform-gpu transition-all duration-300 hover:scale-105 hover:shadow-[0px_16px_40px_4px_#FF7D3B33] p-[1px] xl:min-w-[663px] 2xl:min-w-[854px] bg-gradient-to-b h-[300px] md:h-[412px] overflow-hidden from-[#606064] via-[#60606442] to-[#9B9DC9BD] w-full"
-      initial={{ opacity: 0, y: 20 }}
-      animate={{ opacity: 1, y: 0 }}
+      className="rounded-xl transition-all duration-300 hover:bg-hackathon-orange/20 p-[1px] bg-gradient-to-br from-hackathon-orange/30 to-hackathon-purple/30 w-full h-[280px] md:h-[320px]"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
       transition={{ duration: 0.5 }}
     >
-      <div className="h-full w-full relative rounded-[23px] overflow-hidden bg-black">
-        <div className="relative z-20 px-8 flex flex-col py-4 md:py-[65px] h-full">
+      <div className="bg-black h-full w-full relative rounded-xl overflow-hidden p-6 md:p-8">
+        <div className="flex flex-col h-full">
           {/* Status chip */}
-          <div 
-            className="inline-flex items-center gap-2 rounded-full border border-hackathon-orange/30 bg-black/70 backdrop-blur-sm px-4 py-1.5 mb-6 opacity-0 animate-fade-in"
-            style={{ animationDelay: "200ms" }}
-          >
+          <div className="inline-flex items-center gap-2 bg-black/70 px-3 py-1 mb-4 rounded-full border border-hackathon-orange/20 w-fit">
             <span className="size-2 rounded-full bg-hackathon-green animate-pulse"></span>
-            <span className="text-sm font-medium text-white">
-              Online • Applications close on Mar 22, 2025
-            </span>
+            <span className="text-xs text-white">Applications open</span>
           </div>
 
           {/* Main heading */}
-          <h1 
-            className="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight text-white mb-[10px] font-satoshi opacity-0 animate-fade-in"
-            style={{ animationDelay: "400ms" }}
-          >
-            <DecryptedText 
-              text="Autonomous" 
-              className="text-hackathon-orange"
-              animateOn="view"
-              speed={30}
-              maxIterations={15}
-              style={{ animationDelay: "600ms" }}
-            />
-            {" "}
-            <DecryptedText 
-              text="Builders" 
-              className="text-white"
-              animateOn="view"
-              speed={30}
-              maxIterations={15}
-              style={{ animationDelay: "800ms" }}
-            />
-            {" "}
-            <DecryptedText 
-              text="Hack" 
-              className="text-hackathon-orange"
-              animateOn="view"
-              speed={30}
-              maxIterations={15}
-              style={{ animationDelay: "1000ms" }}
-            />
+          <h1 className="text-3xl md:text-4xl font-bold text-white mb-3">
+            <span className="text-hackathon-orange">AI</span>+<span className="text-hackathon-purple">Web3</span> Hackathon
           </h1>
 
           {/* Subheading */}
-          <p 
-            className="text-base md:text-xl font-normal mb-[44px] text-gray-300 opacity-0 animate-fade-in"
-            style={{ animationDelay: "600ms" }}
-          >
-            A toolkit for your agents to interact with Web3 • AI technologies
+          <p className="text-base text-gray-300 mb-6">
+            Build autonomous agents that interact with blockchain technology
           </p>
 
           {/* CTA button */}
-          <div 
-            className="mt-2 flex opacity-0 animate-fade-in"
-            style={{ animationDelay: "800ms" }}
-          >
+          <div className="mt-auto">
             <RegisterButton formUrl={formUrl} />
           </div>
         </div>
