@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Code, Zap, Bot } from 'lucide-react';
@@ -8,7 +9,6 @@ import TracksCard from '@/components/TracksCard';
 import PrizesCard from '@/components/PrizesCard';
 import TimelineCard from '@/components/TimelineCard';
 import TeamSizeCard from '@/components/TeamSizeCard';
-import SponsorsCard from '@/components/SponsorsCard';
 import IdeasCard from '@/components/IdeasCard';
 
 const Index = () => {
@@ -107,38 +107,33 @@ const Index = () => {
         
           {/* Cards Grid - Updated with improved styling */}
           <motion.div 
-            className="mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
+            className="mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5, delay: 0.8 }}
           >
             {/* Modify each card component to match monochromatic theme */}
-            <div className="group relative transition-all duration-300 hover:-translate-y-1">
+            <div className="group relative transition-all duration-300 hover:-translate-y-1 lg:col-span-2">
               <div className="absolute inset-0 bg-gradient-to-br from-neutral-700/30 to-neutral-900/30 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
               <TracksCard />
             </div>
             
-            <div className="group relative transition-all duration-300 hover:-translate-y-1">
+            <div className="group relative transition-all duration-300 hover:-translate-y-1 lg:col-span-3">
               <div className="absolute inset-0 bg-gradient-to-br from-neutral-700/30 to-neutral-900/30 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
               <PrizesCard />
             </div>
             
-            <div className="group relative transition-all duration-300 hover:-translate-y-1">
+            <div className="group relative transition-all duration-300 hover:-translate-y-1 lg:col-span-3">
               <div className="absolute inset-0 bg-gradient-to-br from-neutral-700/30 to-neutral-900/30 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
               <TimelineCard />
             </div>
             
-            <div className="group relative transition-all duration-300 hover:-translate-y-1">
+            <div className="group relative transition-all duration-300 hover:-translate-y-1 lg:col-span-2">
               <div className="absolute inset-0 bg-gradient-to-br from-neutral-700/30 to-neutral-900/30 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
               <TeamSizeCard />
             </div>
             
-            <div className="group relative transition-all duration-300 hover:-translate-y-1">
-              <div className="absolute inset-0 bg-gradient-to-br from-neutral-700/30 to-neutral-900/30 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
-              <SponsorsCard />
-            </div>
-            
-            <div className="group relative transition-all duration-300 hover:-translate-y-1">
+            <div className="group relative transition-all duration-300 hover:-translate-y-1 lg:col-span-5">
               <div className="absolute inset-0 bg-gradient-to-br from-neutral-700/30 to-neutral-900/30 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
               <IdeasCard />
             </div>
