@@ -20,11 +20,11 @@ const PrizesCard: React.FC = () => {
         <div className="space-y-2">
           <div className="flex items-center justify-between">
             <span className="text-sm text-gray-300">1st Place</span>
-            <span className="font-semibold text-neutral-200">₹15,000</span>
+            <span className="font-semibold text-neutral-200">₹12,000</span>
           </div>
           <div className="flex items-center justify-between">
             <span className="text-sm text-gray-300">2nd Place</span>
-            <span className="font-semibold text-neutral-300">₹10,000</span>
+            <span className="font-semibold text-neutral-300">₹8,000</span>
           </div>
           <div className="flex items-center justify-between">
             <span className="text-sm text-gray-300">3rd Place</span>
@@ -53,7 +53,7 @@ const PrizesCard: React.FC = () => {
         <div className="mt-3 pt-2 border-t border-neutral-800">
           <div className="flex items-center justify-between">
             <span className="text-xs text-gray-300">Total Prize Pool</span>
-            <span className="font-semibold text-white">₹40,000</span>
+            <span className="font-semibold text-white">₹35,000</span>
           </div>
         </div>
       </div>

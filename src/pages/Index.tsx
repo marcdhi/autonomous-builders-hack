@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Code, Zap, Bot } from 'lucide-react';
@@ -101,7 +100,7 @@ const Index = () => {
             
             <div className="flex flex-col items-center text-center p-6 rounded-lg bg-black/60 border border-neutral-800 backdrop-blur-sm">
               <Zap className="h-8 w-8 text-neutral-400 mb-4" />
-              <h3 className="text-xl font-semibold text-white mb-2">₹40,000 Prize</h3>
+              <h3 className="text-xl font-semibold text-white mb-2">₹35,000 Prize</h3>
               <p className="text-neutral-500 text-sm">Win across multiple tracks and categories</p>
             </div>
           </motion.div>
