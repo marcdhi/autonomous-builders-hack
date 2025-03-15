@@ -40,6 +40,7 @@ const HeroSection: React.FC = () => {
               animateOn="view"
               speed={30}
               maxIterations={15}
+              style={{ animationDelay: "600ms" }}
             />
             {" "}
             <DecryptedText 

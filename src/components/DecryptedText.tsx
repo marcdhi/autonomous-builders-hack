@@ -1,5 +1,4 @@
-
-import { useEffect, useState, useRef, ReactNode } from 'react';
+import { useEffect, useState, useRef, ReactNode, CSSProperties } from 'react';
 import { motion } from 'framer-motion';
 
 const styles = {
@@ -32,6 +31,7 @@ interface DecryptedTextProps {
     encryptedClassName?: string;
     animateOn?: 'view' | 'hover';
     children?: ReactNode;
+    style?: CSSProperties;
 }
 
 export default function DecryptedText({
@@ -46,6 +46,7 @@ export default function DecryptedText({
     parentClassName = '',
     encryptedClassName = '',
     animateOn = 'hover',
+    style = {},
     ...props
 }: DecryptedTextProps) {
     const [displayText, setDisplayText] = useState<string>(text);
@@ -218,7 +219,13 @@ export default function DecryptedText({
             : {};
 
     return (
-        <motion.span className={parentClassName} ref={containerRef} style={styles.wrapper} {...hoverProps} {...props}>
+        <motion.span 
+            className={parentClassName} 
+            ref={containerRef} 
+            style={{ ...styles.wrapper, ...style }} 
+            {...hoverProps} 
+            {...props}
+        >
             <span style={styles.srOnly}>{displayText}</span>
 
             <span aria-hidden="true">
