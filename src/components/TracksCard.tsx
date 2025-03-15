@@ -20,15 +20,19 @@ const TracksCard: React.FC = () => {
         <ul className="space-y-3">
           <li className="flex items-center gap-2">
             <span className="size-2 rounded-full bg-hackathon-orange"></span>
-            <span className="text-sm text-gray-300">AI Agents</span>
+            <span className="text-sm text-gray-300">AI Agents & Autonomous Systems</span>
           </li>
           <li className="flex items-center gap-2">
             <span className="size-2 rounded-full bg-hackathon-purple"></span>
-            <span className="text-sm text-gray-300">Web3 Integration</span>
+            <span className="text-sm text-gray-300">Web3 Integration & DApps</span>
           </li>
           <li className="flex items-center gap-2">
             <span className="size-2 rounded-full bg-hackathon-green"></span>
-            <span className="text-sm text-gray-300">Smart Contracts</span>
+            <span className="text-sm text-gray-300">Smart Contracts & On-Chain Governance</span>
+          </li>
+          <li className="flex items-center gap-2">
+            <span className="size-2 rounded-full bg-hackathon-red"></span>
+            <span className="text-sm text-gray-300">AI-powered DeFi Solutions</span>
           </li>
         </ul>
       </div>

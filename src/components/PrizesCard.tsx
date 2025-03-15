@@ -30,16 +30,30 @@ const PrizesCard: React.FC = () => {
             <span className="text-sm text-gray-300">3rd Place</span>
             <span className="font-semibold text-white">₹5,000</span>
           </div>
-          <div className="flex items-center justify-between">
-            <span className="text-sm text-gray-300">Best AI Agent</span>
-            <span className="font-semibold text-hackathon-green">₹5,000</span>
+        </div>
+        
+        <div className="mt-4 pt-3 border-t border-gray-800">
+          <h4 className="text-sm font-medium text-gray-400 mb-2">Category Awards</h4>
+          <div className="space-y-2">
+            <div className="flex items-center justify-between">
+              <span className="text-sm text-gray-300">Best AI Agent</span>
+              <span className="font-semibold text-hackathon-green">₹5,000</span>
+            </div>
+            <div className="flex items-center justify-between">
+              <span className="text-sm text-gray-300">Best Web3 Integration</span>
+              <span className="font-semibold text-hackathon-purple">₹3,000</span>
+            </div>
+            <div className="flex items-center justify-between">
+              <span className="text-sm text-gray-300">Most Innovative Use Case</span>
+              <span className="font-semibold text-hackathon-orange">₹2,000</span>
+            </div>
           </div>
         </div>
         
         <div className="mt-3 pt-2 border-t border-gray-800">
           <div className="flex items-center justify-between">
             <span className="text-xs text-gray-300">Total Prize Pool</span>
-            <span className="font-semibold text-white">₹35,000</span>
+            <span className="font-semibold text-white">₹40,000</span>
           </div>
         </div>
       </div>

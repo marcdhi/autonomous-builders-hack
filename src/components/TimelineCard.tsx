@@ -20,15 +20,23 @@ const TimelineCard: React.FC = () => {
         <div className="space-y-2">
           <div className="flex justify-between">
             <span className="text-sm text-gray-300">Applications Open</span>
-            <span className="text-xs text-gray-400">Feb 22, 2025</span>
+            <span className="text-xs text-gray-400">Mar 15, 2025</span>
           </div>
           <div className="flex justify-between">
             <span className="text-sm text-gray-300">Applications Close</span>
+            <span className="text-xs text-gray-400">Mar 21, 2025</span>
+          </div>
+          <div className="flex justify-between">
+            <span className="text-sm text-gray-300">Hackathon Starts</span>
             <span className="text-xs text-gray-400">Mar 22, 2025</span>
           </div>
           <div className="flex justify-between">
-            <span className="text-sm text-gray-300">Hackathon</span>
-            <span className="text-xs text-gray-400">Mar 22-23, 2025</span>
+            <span className="text-sm text-gray-300">Hackathon Ends</span>
+            <span className="text-xs text-gray-400">Mar 23, 2025</span>
+          </div>
+          <div className="flex justify-between">
+            <span className="text-sm text-gray-300">Results Announcement</span>
+            <span className="text-xs text-gray-400">Mar 25, 2025</span>
           </div>
         </div>
       </div>
