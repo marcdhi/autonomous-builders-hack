@@ -3,6 +3,15 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Satoshi Font */
+@font-face {
+  font-family: 'Satoshi';
+  src: url('https://api.fontshare.com/v2/css?f[]=satoshi@900,700,500,300,400&display=swap');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -97,7 +106,7 @@
 
 @layer utilities {
   .glass-morphism {
-    @apply bg-white/70 backdrop-blur-md border border-white/20;
+    @apply bg-white/5 backdrop-blur-md border border-white/10 shadow-[0_4px_15px_rgba(0,0,0,0.1)];
   }
   
   .text-balance {

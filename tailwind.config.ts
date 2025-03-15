@@ -85,8 +85,8 @@ export default {
 					to: { height: '0' }
 				},
 				'fade-in': {
-					'0%': { opacity: '0' },
-					'100%': { opacity: '1' }
+					'0%': { opacity: '0', transform: 'translateY(10px)' },
+					'100%': { opacity: '1', transform: 'translateY(0)' }
 				},
 				'slide-up': {
 					'0%': { transform: 'translateY(20px)', opacity: '0' },
@@ -112,6 +112,7 @@ export default {
 			},
 			fontFamily: {
 				'sans': ['SF Pro Display', 'Inter', 'system-ui', 'sans-serif'],
+				'satoshi': ['Satoshi', 'sans-serif'],
 				'mono': ['SF Mono', 'ui-monospace', 'monospace']
 			}
 		}
