@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Code, Zap, Robot } from 'lucide-react';
+import { Code, Zap, Bot } from 'lucide-react';
 import RegisterButton from '@/components/RegisterButton';
 import BackgroundEffect from '@/components/BackgroundEffect';
 
@@ -60,7 +60,7 @@ const Index = () => {
           </div>
           
           <div className="flex flex-col items-center text-center p-6 rounded-lg bg-hackathon-purple/10 border border-hackathon-purple/20">
-            <Robot className="h-8 w-8 text-hackathon-purple mb-4" />
+            <Bot className="h-8 w-8 text-hackathon-purple mb-4" />
             <h3 className="text-xl font-semibold text-white mb-2">AI Agents</h3>
             <p className="text-gray-400 text-sm">Create autonomous systems that think and act</p>
           </div>
