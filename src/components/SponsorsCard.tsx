@@ -6,7 +6,7 @@ import { Gift } from 'lucide-react';
 const SponsorsCard: React.FC = () => {
   return (
     <motion.div 
-      className="rounded-3xl transform-gpu transition-all duration-300 hover:scale-105 hover:bg-hackathon-purple hover:shadow-[0px_16px_40px_4px_#8B5CF633] p-[1px] bg-gradient-to-b from-[#606064] via-[#60606442] to-[#9B9DC9BD] md:max-w-[388px] w-full"
+      className="rounded-3xl transform-gpu transition-all duration-300 hover:scale-105 hover:bg-hackathon-purple hover:shadow-[0px_16px_40px_4px_#8B5CF633] p-[1px] bg-gradient-to-b from-[#606064] via-[#60606442] to-[#9B9DC9BD] w-full h-full"
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5, delay: 0.3 }}
@@ -17,10 +17,29 @@ const SponsorsCard: React.FC = () => {
           <h3 className="text-2xl font-bold text-white">Sponsors</h3>
         </div>
         
-        <div className="flex flex-wrap items-center justify-around gap-4 mt-6">
-          <div className="p-4 bg-white/5 rounded-lg text-gray-300">Sponsor 1</div>
-          <div className="p-4 bg-white/5 rounded-lg text-gray-300">Sponsor 2</div>
-          <div className="p-4 bg-white/5 rounded-lg text-gray-300">Sponsor 3</div>
+        <div className="grid grid-cols-2 gap-3 mt-4">
+          <div className="p-3 bg-white/5 rounded-lg flex items-center justify-center">
+            <div className="font-semibold text-white">Platinum</div>
+          </div>
+          <div className="p-3 bg-white/5 rounded-lg flex items-center justify-center">
+            <div className="font-semibold text-white">Gold</div>
+          </div>
+          <div className="p-3 bg-white/5 rounded-lg flex items-center justify-center">
+            <div className="font-semibold text-white">Silver</div>
+          </div>
+          <div className="p-3 bg-white/5 rounded-lg flex items-center justify-center">
+            <div className="font-semibold text-white">Bronze</div>
+          </div>
+        </div>
+        
+        <div className="mt-4 text-center">
+          <p className="text-sm text-gray-400">Interested in sponsoring?</p>
+          <a 
+            href="#" 
+            className="inline-block mt-2 text-sm px-4 py-1.5 rounded-full bg-hackathon-purple/20 text-white border border-hackathon-purple/30 hover:bg-hackathon-purple/30 transition-colors duration-200"
+          >
+            Contact Us
+          </a>
         </div>
         
         <div
