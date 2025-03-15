@@ -5,6 +5,12 @@ import { Code, Zap, Bot } from 'lucide-react';
 import RegisterButton from '@/components/RegisterButton';
 import BackgroundEffect from '@/components/BackgroundEffect';
 import { SplineSceneBasic } from '@/components/ui/spline-demo';
+import TracksCard from '@/components/TracksCard';
+import PrizesCard from '@/components/PrizesCard';
+import TimelineCard from '@/components/TimelineCard';
+import TeamSizeCard from '@/components/TeamSizeCard';
+import SponsorsCard from '@/components/SponsorsCard';
+import IdeasCard from '@/components/IdeasCard';
 
 const Index = () => {
   const formUrl = "https://forms.google.com"; // Replace with actual form URL
@@ -95,58 +101,46 @@ const Index = () => {
             
             <div className="flex flex-col items-center text-center p-6 rounded-lg bg-black/60 border border-neutral-800 backdrop-blur-sm">
               <Zap className="h-8 w-8 text-neutral-400 mb-4" />
-              <h3 className="text-xl font-semibold text-white mb-2">₹35,000 Prize</h3>
+              <h3 className="text-xl font-semibold text-white mb-2">₹40,000 Prize</h3>
               <p className="text-neutral-500 text-sm">Win across multiple tracks and categories</p>
             </div>
           </motion.div>
         
-          {/* Timeline */}
+          {/* Cards Grid */}
           <motion.div 
-            className="mt-16 w-full max-w-2xl mx-auto border border-neutral-800 rounded-xl p-6 bg-black/60 backdrop-blur-sm"
+            className="mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ duration: 0.5, delay: 1 }}
+            transition={{ duration: 0.5, delay: 0.8 }}
           >
-            <h3 className="text-xl font-semibold text-center text-white mb-4">Timeline</h3>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-              <div className="text-center">
-                <p className="text-neutral-200 font-medium">Mar 1</p>
-                <p className="text-sm text-neutral-500">Applications Open</p>
-              </div>
-              <div className="text-center">
-                <p className="text-neutral-200 font-medium">Mar 15</p>
-                <p className="text-sm text-neutral-500">Hacking Begins</p>
-              </div>
-              <div className="text-center">
-                <p className="text-neutral-200 font-medium">Mar 31</p>
-                <p className="text-sm text-neutral-500">Final Submissions</p>
-              </div>
-            </div>
+            <TracksCard />
+            <PrizesCard />
+            <TimelineCard />
+            <TeamSizeCard />
+            <SponsorsCard />
+            <IdeasCard />
           </motion.div>
-          
+
           {/* Team size */}
           <motion.div 
-            className="mt-6 flex items-center justify-center gap-2 text-neutral-500"
+            className="mt-10 flex items-center justify-center gap-2 text-neutral-500"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5, delay: 1.2 }}
           >
-            <span className="text-sm">Team Size:</span>
-            <span className="text-sm font-medium text-neutral-300">1-4 participants</span>
+            <span className="text-sm">Organized by</span>
+            <span className="text-sm font-medium text-neutral-300">UniDAO-NITK and HackClub-NITK</span>
           </motion.div>
 
           {/* Footer */}
           <motion.div 
-            className="mt-12 text-sm text-neutral-600 text-center"
+            className="mt-8 text-sm text-neutral-600 text-center"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5, delay: 1.4 }}
           >
             <div className="flex items-center justify-center gap-2">
-              <span>Powered by</span>
-              <span className="font-medium text-neutral-400">UniDAO-NITK</span>
-              <span>and</span>
-              <span className="font-medium text-neutral-400">HackClub-NITK</span>
+              <span>© 2025 Autonomous Builders Hack</span>
             </div>
           </motion.div>
         </div>
