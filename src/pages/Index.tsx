@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import { Code, Zap, Bot } from 'lucide-react';
 import RegisterButton from '@/components/RegisterButton';
 import BackgroundEffect from '@/components/BackgroundEffect';
+import { SplineSceneBasic } from '@/components/ui/spline-demo';
 
 const Index = () => {
   const formUrl = "https://forms.google.com"; // Replace with actual form URL
@@ -45,6 +46,16 @@ const Index = () => {
         >
           Build autonomous agents that interact with blockchain technology
         </motion.p>
+
+        {/* 3D Scene Component */}
+        <motion.div
+          className="mt-8 w-full"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.5 }}
+        >
+          <SplineSceneBasic />
+        </motion.div>
 
         {/* Features section */}
         <motion.div 
