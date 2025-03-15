@@ -106,30 +106,56 @@ const Index = () => {
             </div>
           </motion.div>
         
-          {/* Cards Grid */}
+          {/* Cards Grid - Updated with improved styling */}
           <motion.div 
             className="mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5, delay: 0.8 }}
           >
-            <TracksCard />
-            <PrizesCard />
-            <TimelineCard />
-            <TeamSizeCard />
-            <SponsorsCard />
-            <IdeasCard />
+            {/* Modify each card component to match monochromatic theme */}
+            <div className="group relative transition-all duration-300 hover:-translate-y-1">
+              <div className="absolute inset-0 bg-gradient-to-br from-neutral-700/30 to-neutral-900/30 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
+              <TracksCard />
+            </div>
+            
+            <div className="group relative transition-all duration-300 hover:-translate-y-1">
+              <div className="absolute inset-0 bg-gradient-to-br from-neutral-700/30 to-neutral-900/30 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
+              <PrizesCard />
+            </div>
+            
+            <div className="group relative transition-all duration-300 hover:-translate-y-1">
+              <div className="absolute inset-0 bg-gradient-to-br from-neutral-700/30 to-neutral-900/30 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
+              <TimelineCard />
+            </div>
+            
+            <div className="group relative transition-all duration-300 hover:-translate-y-1">
+              <div className="absolute inset-0 bg-gradient-to-br from-neutral-700/30 to-neutral-900/30 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
+              <TeamSizeCard />
+            </div>
+            
+            <div className="group relative transition-all duration-300 hover:-translate-y-1">
+              <div className="absolute inset-0 bg-gradient-to-br from-neutral-700/30 to-neutral-900/30 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
+              <SponsorsCard />
+            </div>
+            
+            <div className="group relative transition-all duration-300 hover:-translate-y-1">
+              <div className="absolute inset-0 bg-gradient-to-br from-neutral-700/30 to-neutral-900/30 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
+              <IdeasCard />
+            </div>
           </motion.div>
 
-          {/* Team size */}
+          {/* Organizers */}
           <motion.div 
-            className="mt-10 flex items-center justify-center gap-2 text-neutral-500"
+            className="mt-16 flex items-center justify-center gap-2 text-neutral-500"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5, delay: 1.2 }}
           >
             <span className="text-sm">Organized by</span>
-            <span className="text-sm font-medium text-neutral-300">UniDAO-NITK and HackClub-NITK</span>
+            <span className="text-sm font-medium text-neutral-300">UniDAO-NITK</span>
+            <span className="text-xs mx-2">×</span>
+            <span className="text-sm font-medium text-neutral-300">HackClub-NITK</span>
           </motion.div>
 
           {/* Footer */}

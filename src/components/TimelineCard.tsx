@@ -6,14 +6,14 @@ import { Calendar } from 'lucide-react';
 const TimelineCard: React.FC = () => {
   return (
     <motion.div 
-      className="rounded-xl transition-all duration-300 hover:bg-hackathon-orange/20 p-[1px] bg-gradient-to-br from-hackathon-orange/30 to-hackathon-purple/30 w-full h-full"
+      className="rounded-xl transition-all duration-300 p-[1px] bg-gradient-to-br from-neutral-700/30 to-neutral-900/20 w-full h-full"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.5 }}
     >
       <div className="bg-black h-full w-full relative rounded-xl overflow-hidden p-6">
         <div className="flex items-center gap-2 mb-4">
-          <Calendar className="h-4 w-4 text-hackathon-orange" />
+          <Calendar className="h-4 w-4 text-neutral-400" />
           <h3 className="text-lg font-bold text-white">Timeline</h3>
         </div>
         
