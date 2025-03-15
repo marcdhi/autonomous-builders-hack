@@ -47,7 +47,7 @@ const Index = () => {
           Build autonomous agents that interact with blockchain technology
         </motion.p>
 
-        {/* 3D Scene Component */}
+        {/* 3D Scene Component with fallback */}
         <motion.div
           className="mt-8 w-full"
           initial={{ opacity: 0, y: 20 }}
