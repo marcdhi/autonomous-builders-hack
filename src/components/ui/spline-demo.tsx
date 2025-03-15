@@ -31,7 +31,7 @@ export function SplineSceneBasic() {
   }, []);
 
   return (
-    <Card className="w-full h-[500px] bg-black/[0.96] relative overflow-hidden">
+    <Card className="w-full h-[500px] bg-black/[0.96] relative overflow-hidden border border-neutral-800">
       <Spotlight
         className="-top-40 left-0 md:left-60 md:-top-20"
         fill="white"
@@ -43,9 +43,9 @@ export function SplineSceneBasic() {
           <h1 className="text-4xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400">
             Interactive 3D
           </h1>
-          <p className="mt-4 text-neutral-300 max-w-lg">
-            Bring your UI to life with beautiful 3D scenes. Create immersive experiences 
-            that capture attention and enhance your design.
+          <p className="mt-4 text-neutral-400 max-w-lg">
+            Bring your AI to life with blockchain technology. Create immersive experiences 
+            that capture attention and enhance your project.
           </p>
         </div>
 
@@ -61,18 +61,18 @@ export function SplineSceneBasic() {
               <div className="text-center">
                 <div className="flex justify-center mb-4">
                   <div className="grid grid-cols-3 gap-2">
-                    <div className="p-3 bg-hackathon-orange/20 rounded-lg flex justify-center">
-                      <Bot className="h-8 w-8 text-hackathon-orange" />
+                    <div className="p-3 bg-neutral-800/40 rounded-lg flex justify-center">
+                      <Bot className="h-8 w-8 text-neutral-400" />
                     </div>
-                    <div className="p-3 bg-hackathon-purple/20 rounded-lg flex justify-center">
-                      <Laptop className="h-8 w-8 text-hackathon-purple" />
+                    <div className="p-3 bg-neutral-800/40 rounded-lg flex justify-center">
+                      <Laptop className="h-8 w-8 text-neutral-400" />
                     </div>
-                    <div className="p-3 bg-hackathon-green/20 rounded-lg flex justify-center">
-                      <Lightbulb className="h-8 w-8 text-hackathon-green" />
+                    <div className="p-3 bg-neutral-800/40 rounded-lg flex justify-center">
+                      <Lightbulb className="h-8 w-8 text-neutral-400" />
                     </div>
                   </div>
                 </div>
-                <p className="text-gray-400 text-sm">
+                <p className="text-neutral-500 text-sm">
                   3D scene visualization
                 </p>
               </div>

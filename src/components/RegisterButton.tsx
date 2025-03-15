@@ -18,8 +18,9 @@ const RegisterButton: React.FC<RegisterButtonProps> = ({ formUrl, className }) =
       onClick={handleRegister}
       className={cn(
         'relative overflow-hidden rounded-full font-medium transition-all duration-300',
-        'bg-gradient-to-r from-hackathon-orange to-hackathon-purple text-white',
-        'hover:shadow-lg hover:shadow-hackathon-purple/20 hover:scale-105',
+        'bg-gradient-to-r from-neutral-700 to-neutral-900 text-white',
+        'border border-neutral-700 hover:border-neutral-600',
+        'hover:shadow-lg hover:shadow-neutral-900/20 hover:scale-105',
         'active:scale-95 px-8 py-3',
         className
       )}
