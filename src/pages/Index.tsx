@@ -11,7 +11,7 @@ import TimelineCard from '@/components/TimelineCard';
 import TeamSizeCard from '@/components/TeamSizeCard';
 
 const Index = () => {
-  const formUrl = "https://forms.google.com"; // Replace with actual form URL
+  const formUrl = "https://forms.gle/Dj3UY2DBYQf3uDN17"; // Updated registration form URL
   
   return (
     <div className="min-h-screen flex flex-col h-full bg-black overflow-hidden">
