@@ -20,15 +20,15 @@ const PrizesCard: React.FC = () => {
         <div className="space-y-2">
           <div className="flex items-center justify-between">
             <span className="text-sm text-gray-300">1st Place</span>
-            <span className="font-semibold text-neutral-200">₹12,000</span>
+            <span className="font-semibold text-neutral-200">₹10,000</span>
           </div>
           <div className="flex items-center justify-between">
             <span className="text-sm text-gray-300">2nd Place</span>
-            <span className="font-semibold text-neutral-300">₹8,000</span>
+            <span className="font-semibold text-neutral-300">₹7,000</span>
           </div>
           <div className="flex items-center justify-between">
             <span className="text-sm text-gray-300">3rd Place</span>
-            <span className="font-semibold text-neutral-400">₹5,000</span>
+            <span className="font-semibold text-neutral-400">₹4,000</span>
           </div>
         </div>
         
@@ -37,7 +37,7 @@ const PrizesCard: React.FC = () => {
           <div className="space-y-2">
             <div className="flex items-center justify-between">
               <span className="text-sm text-gray-300">Best AI Agent</span>
-              <span className="font-semibold text-neutral-300">₹5,000</span>
+              <span className="font-semibold text-neutral-300">₹4,000</span>
             </div>
             <div className="flex items-center justify-between">
               <span className="text-sm text-gray-300">Best Web3 Integration</span>
@@ -53,7 +53,7 @@ const PrizesCard: React.FC = () => {
         <div className="mt-3 pt-2 border-t border-neutral-800">
           <div className="flex items-center justify-between">
             <span className="text-xs text-gray-300">Total Prize Pool</span>
-            <span className="font-semibold text-white">₹35,000</span>
+            <span className="font-semibold text-white">₹30,000</span>
           </div>
         </div>
       </div>
